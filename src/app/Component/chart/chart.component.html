@@ -1,0 +1,41 @@
+
+<br>
+    <h1 class="text">Weather Forecase with chart.js Of Ahmedabad</h1>
+
+    
+
+    <div *ngIf="chart">
+      <canvas id="canvas">{{ chart }}</canvas>
+    </div>
+
+
+    <br>
+    <h3 class="text-center">Weather Forecase for {{date}}</h3>
+    
+
+<dl *ngIf="chart">
+  <dt class="col-sm-3">Country Name</dt>
+  <dd class="col-sm-9">{{countryName}}</dd>
+  <dt class="col-sm-3">Country Population</dt>
+  <dd class="col-sm-9">{{population}}</dd>
+  <dt class="col-sm-3">Country Coordinates</dt>
+  <dd class="col-sm-9">{{coordinates}}</dd>
+  <dt class="col-sm-3">Weather</dt>
+  <dd class="col-sm-9">{{weather}}</dd>
+  <dt class="col-sm-3">Weather Description</dt>
+  <dd class="col-sm-9">{{weatherDesc}}</dd>
+  <dt class="col-sm-3">Weather Degree</dt>
+  <dd class="col-sm-9">{{windDeg}}</dd>
+  <dt class="col-sm-3">Weather Speed</dt>
+  <dd class="col-sm-9">{{windSpeed}}</dd>
+  <dt class="col-sm-3">Weather Humidity</dt>
+  <dd class="col-sm-9">{{humidity}}</dd>
+  <dt class="col-sm-3">Weather Pressure</dt>
+  <dd class="col-sm-9">{{pressure}}</dd>
+  <dt class="col-sm-3">Weather Temperature</dt>
+  <dd class="col-sm-9">{{temp}}</dd>
+  <dt class="col-sm-3">Sea Level</dt>
+  <dd class="col-sm-9">{{seaLevel}}</dd>
+  <dt class="col-sm-3">Ground Level</dt>
+  <dd class="col-sm-9">{{groundLevel}}</dd>
+</dl>
